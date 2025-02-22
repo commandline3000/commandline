@@ -13,8 +13,7 @@ const About: React.FC = () => {
         <p>
           Starting with meme coins and NFTs, we provide a marketplace and
           community where creators and traders thrive. But we’re not stopping
-          there — our ultimate goal is to bring real-world asset (RWA)
-          tokenization to the blockchain, creating new decentralized solutions
+          there — our ultimate goal is to bring RWA tokenization to the blockchain, creating new decentralized solutions
           for everyday assets.
         </p>
         <br />
