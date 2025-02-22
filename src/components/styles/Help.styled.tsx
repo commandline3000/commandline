@@ -17,9 +17,7 @@ export const CmdDesc = styled.span`
   color: ${({ theme }) => theme.colors?.text[200]};
   margin-bottom: 0.75rem;
 
-  @media (max-width: 550px) {
-    display: block;
-  }
+
 `;
 
 export const KeyContainer = styled.div`

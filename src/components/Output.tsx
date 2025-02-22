@@ -14,6 +14,10 @@ import Themes from "./commands/Themes";
 import { OutputContainer, UsageDiv } from "./styles/Output.styled";
 import { termContext } from "./Terminal";
 import { useContext } from "react";
+import BallersJoinUs from "./commands/BallersJoinUs"; // Import the new command component
+import TeamAndTalent from "./commands/TeamAndTalent"; // Import the new component
+import Malaga from "./commands/Malaga"; // Import the new component
+
 
 type Props = {
   index: number;
@@ -23,7 +27,7 @@ type Props = {
 const Output: React.FC<Props> = ({ index, cmd }) => {
   const { arg } = useContext(termContext);
 
-  const specialCmds = ["projects", "socials", "themes", "echo"];
+  const specialCmds = ["projects", "socials", "themes", "echo", "ballers join us", "team & talent", "malaga"];
 
   // return 'Usage: <cmd>' if command arg is not valid
   // eg: about tt
@@ -48,6 +52,11 @@ const Output: React.FC<Props> = ({ index, cmd }) => {
           themes: <Themes />,
           welcome: <Welcome />,
           whoami: <GeneralOutput>visitor</GeneralOutput>,
+          ballers: <BallersJoinUs />, // Add new command case here
+          talent: <TeamAndTalent />, // Add new command case here
+          malaga: <Malaga />, // Add new command case here
+
+
         }[cmd]
       }
     </OutputContainer>

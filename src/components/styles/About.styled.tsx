@@ -1,11 +1,13 @@
 import styled from "styled-components";
 
 export const AboutWrapper = styled.div`
-  margin-top: 0.25rem;
-  margin-bottom: 0.75rem;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  padding: 1rem;
+
   p {
-    margin-top: 0.5rem;
-    line-height: 1.5rem;
+    margin: 1rem 0;
+    /* Let global styles determine font-size and line-height */
   }
 `;
 

@@ -1,9 +1,7 @@
 import styled from "styled-components";
 
 export const Wrapper = styled.div`
-  padding: 1.25rem;
-  padding-top: 0.75rem;
-
+  padding: 1.25rem 1.25rem 0.75rem;
   display: flex;
   flex-direction: column-reverse;
   max-height: calc(100vh - 2rem);
@@ -40,8 +38,28 @@ export const Form = styled.form`
   }
 `;
 
+// **Update** Input to remove background & border
 export const Input = styled.input`
   flex-grow: 1;
+  background: transparent;
+  border: none;
+  outline: none;
+  color: #268bd2; /* or your preferred text color */
+  font-family: 'Monaspace Neon', monospace;
+
+  caret-color: #268bd2; /* blinking caret color */
+
+  &:focus {
+    outline: none;
+    box-shadow: none;
+  }
+
+  /* Remove default autofill background in some browsers */
+  &:-webkit-autofill,
+  &:-webkit-autofill:hover,
+  &:-webkit-autofill:focus {
+    box-shadow: 0 0 0px 1000px transparent inset;
+  }
 
   @media (max-width: 550px) {
     min-width: 85%;

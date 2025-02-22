@@ -10,7 +10,7 @@ export const HeroContainer = styled.div`
 
   div {
     @media (min-width: 1024px) {
-      flex-basis: 50%;
+      
     }
   }
 `;
