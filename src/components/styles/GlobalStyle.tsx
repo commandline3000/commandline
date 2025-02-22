@@ -50,14 +50,16 @@ const GlobalStyle = createGlobalStyle`
   }
 
   /* Terminal Wrapper */
-  #terminal-wrapper {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-    position: relative;
-  }
+#terminal-wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+  position: relative;
+}
+
 
   /* Command Text */
   #terminal-wrapper span {
@@ -97,8 +99,28 @@ const GlobalStyle = createGlobalStyle`
     overflow: hidden;
   }
 
-  #circle1,
-  #circle2,
+  #circle1 {
+    position: absolute;
+    top: -80vmax;
+    left: 40%;
+    width: 100vmax;
+    height: 100vmax;
+    border-radius: 50%;
+    mix-blend-mode: screen;
+    filter: blur(80px);
+    animation: orbit 10s linear infinite;
+  },
+  #circle2 {
+    position: absolute;
+    top: -80vmax;
+    left: 40%;
+    width: 100vmax;
+    height: 100vmax;
+    border-radius: 50%;
+    mix-blend-mode: screen;
+    filter: blur(80px);
+    animation: orbit 10s linear infinite;
+  },
   #circle3 {
     position: absolute;
     top: -80vmax;
@@ -112,15 +134,15 @@ const GlobalStyle = createGlobalStyle`
   }
 
   #circle1 {
-    background-color: hsla(53, 71%, 73%, 0.6);
+    background-color: hsla(53, 93.70%, 62.40%, 0.60);
   }
 
   #circle2 {
-    background-color: rgba(0,200,255,0.6);
+    background-color: rgba(71, 213, 249, 0.57);
   }
 
   #circle3 {
-    background-color: rgba(254,182,255,0.6);
+    background-color: rgba(240, 86, 245, 0.64);
   }
 `;
 

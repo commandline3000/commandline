@@ -3,7 +3,7 @@ import styled from "styled-components";
 export const Wrapper = styled.div`
   padding: 1.25rem 1.25rem 0.75rem;
   display: flex;
-  flex-direction: column-reverse;
+  flex-direction: column;
   max-height: calc(100vh - 2rem);
   overflow-y: auto;
 `;

@@ -5,7 +5,7 @@ export const OutputContainer = styled.div`
 `;
 
 export const Wrapper = styled.div`
-  margin-top: 0.25rem;
+  margin-top: auto;
   margin-bottom: 0.75rem;
 `;
 
