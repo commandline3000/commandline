@@ -113,7 +113,7 @@ const Footer: React.FC = () => {
               
               <a
           href="https://twitter.com/YourTwitter"
-          onClick={handleClick("socials go 1")}
+          
           target="_blank"
           rel="noopener noreferrer"
         >
@@ -122,7 +122,7 @@ const Footer: React.FC = () => {
         </a>
         <a
           href="https://telegram.org"
-          onClick={handleClick("socials go 2")}
+          
           target="_blank"
           rel="noopener noreferrer"
         >
@@ -130,13 +130,13 @@ const Footer: React.FC = () => {
         </a>
         <a
           href="https://github.com/YourGitHub"
-          onClick={handleClick("socials go 3")}
+          
           target="_blank"
           rel="noopener noreferrer"
         >
           GitHub
         </a>::
-        <a href="https://github.com/satnaing/terminal-portfolio">
+        <a href="https://github.com/satnaing/terminal-portfolio" >
               Inspiration
               </a>
       </div>
