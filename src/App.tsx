@@ -105,8 +105,13 @@ const Footer: React.FC = () => {
       </div>
 
       {/* Right Links (Socials) */}
+
+
+              
       <div style={{ display: "flex", gap: "1rem" }}>
-        <a
+      
+              
+              <a
           href="https://twitter.com/YourTwitter"
           onClick={handleClick("socials go 1")}
           target="_blank"
@@ -130,15 +135,10 @@ const Footer: React.FC = () => {
           rel="noopener noreferrer"
         >
           GitHub
-        </a>
-        <a
-          href="https://coinbase.com"
-          onClick={handleClick("socials go 4")}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Coinbase
-        </a>
+        </a>::
+        <a href="https://github.com/satnaing/terminal-portfolio">
+              Inspiration
+              </a>
       </div>
     </footer>
   );
